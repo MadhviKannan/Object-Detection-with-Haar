@@ -14,7 +14,7 @@ This code runs on Python 2.7.
 # Training the dataset </br>
 This project is an attempt to train a Cascade Classifier using Haar Transform for phone object detection. </br>
 Make sure to have the find_phone directory with the 132 positive phone images along with the corresponding labels.txt </br>
-The model has been trained for 10 stages and a cascade.xml file has been created in the /data directory. </br>
+The model has been trained for 10 stages and a cascade.xml file has been created in the ~/data directory. </br>
 
 # To run this code </br>
 

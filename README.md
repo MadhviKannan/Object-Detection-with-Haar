@@ -30,8 +30,8 @@ python find_phone.py {arg1} </br>
 # Sample Output for test image </br>
 
 
-Input - ~/find_phone/89.jpg
-Predicted Output central coordinates- 0.26734 0.36809
+Input - ~/find_phone/89.jpg </br>
+Predicted Output central coordinates- 0.26734 0.36809 </br>
 
 
 # Possible next steps </br>

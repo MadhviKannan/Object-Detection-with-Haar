@@ -9,7 +9,7 @@ This code runs on Python 2.7.
 5) numpy </br>
 6) pillow </br
 
-(Recommended to install all these packages in a conda virtual environment) </br>
+(Recommended to install all packages in a conda virtual environment) </br>
 
 # Training the dataset </br>
 This project is an attempt to train a Cascade Classifier using Haar Transform for phone object detection. </br>

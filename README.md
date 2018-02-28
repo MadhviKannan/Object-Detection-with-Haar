@@ -7,7 +7,7 @@ This code runs on Python 2.7.
 3) Shlex </br>
 4) OS </br>
 5) numpy </br>
-6) pillow (</br)
+6) pillow </br
 
 (Recommended to install all these packages in a conda virtual environment) </br>
 

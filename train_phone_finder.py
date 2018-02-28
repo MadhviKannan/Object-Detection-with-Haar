@@ -15,7 +15,7 @@ import subprocess
 import shlex
 import sys
 rootDir=sys.argv[1]
-
+#print rootDir
 #rootDir='/Users/madhvikannan/Desktop/USC_Docs/BrainCorp/find_phone_task/find_phone'
 dataDir=os.getcwd()
 dataDir=dataDir+'/data'
@@ -103,7 +103,8 @@ with open(destDirNeg+'/'+file_name,'w') as f:
                         f.write(rootDirNeg+"/"+fileNames[i]+'\n')
 f.close()
 
-commandline1='opencv_createsamples -info /Users/madhvikannan/Desktop/USC_Docs/BrainCorp/find_phone_task/find_phone/positive.lst -num 1950 -w 25 -h 25 -vec /Users/madhvikannan/Desktop/USC_Docs/BrainCorp/find_phone_task/find_phone/positives.vec'
+commandline1='opencv_createsamples -info '+rootDir+ '/positive.lst -num 1950 -w 25 -h 25 -vec '+rootDir+'/positives.vec'
+
 args1=shlex.split(commandline1)
 print 'creating positive vector file'
 p=subprocess.call(args1)

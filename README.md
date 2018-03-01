@@ -31,7 +31,8 @@ python find_phone.py {arg1} </br>
 
 
 Input - ~/find_phone/89.jpg </br>
-Predicted Output central coordinates- 0.26734 0.36809 </br>
+Predicted Output central coordinates- </br>
+0.26734 0.36809 </br>
 
 # Limitations </br>
 The predicitons were accurate for images with a clear background, with a high accuracy. But for images with a background that had black lines in them, the prediction accuracy dropped drastically. </br>

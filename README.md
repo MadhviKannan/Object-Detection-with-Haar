@@ -1,5 +1,5 @@
 # Object-Detection-with-Haar </br>
-This code runs on Python 2.7. It was tested on Mac OSX. 
+This code runs on Python 2.7. It was tested on Mac OSX. It can be run on Linux/Mac OS.
 
 # Modules used </br>
 1) OpenCV version 3.3.0 (doesn't work for versions older than this) </br>

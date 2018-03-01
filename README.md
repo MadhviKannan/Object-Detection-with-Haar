@@ -33,10 +33,12 @@ python find_phone.py {arg1} </br>
 Input - ~/find_phone/89.jpg </br>
 Predicted Output central coordinates- 0.26734 0.36809 </br>
 
-
+# Limitations </br>
+The predicitons were accurate for images with a clear background, with a high accuracy. But for images with a background that had black lines in them, the prediction accuracy dropped drastically. </br>
 # Possible next steps </br>
+The first thing that can be done is to retrain the classifier by taking patches of images with any black artifact in the positive directory and adding them to the negative image folder. </br>
 
-Increasing the dataset would be the first step towards getting a more accurate model. Currently, the negative images/background images are being retrieved from a website online (http://haar.thiagohersan.com/haartraining/negatives/) which has all images except for images with a phone. The model's accuracy might increase if the negative images just consisted of background positive image without the phone in them. </br>
+Increasing the dataset would be the next step towards getting a more accurate model. Currently, the negative images/background images are being retrieved from a website online (http://haar.thiagohersan.com/haartraining/negatives/) which has all images except for images with a phone. The model's accuracy might increase if the negative images also consisted of background positive image without the phone in them. </br>
 
 State of the art for object detection is to use Neural networks - MobileNet, SSD networks. </br>
 This could be a possible next step towards achieving a better, more accurate model. </br>

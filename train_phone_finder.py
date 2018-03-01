@@ -1,10 +1,5 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Feb 11 17:53:54 2018
-
-@author: madhvikannan
-"""
+#This code is used to train the Cascade classifier. It outputs a cascade.xml file in the data directory which has the trained 
+#model. 
 #Modules required
 
 import cv2

@@ -82,7 +82,7 @@ with open(destDirNeg+'/'+file_name,'w') as f:
 f.close()
 
 
-commandline1='opencv_createsamples -info '+rootDir+ '/positive.lst -num 1950 -w 25 -h 25 -vec '+rootDir+'/positives.vec'
+commandline1='opencv_createsamples -info '+rootDir+ '/positive.lst -num 350 -w 25 -h 25 -vec '+rootDir+'/positives.vec'
 print commandline1
 args1=shlex.split(commandline1)
 p=subprocess.call(args1)

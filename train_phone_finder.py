@@ -59,7 +59,7 @@ f.close()
 ## Get same number of Negative Images and resize to same size as positive images    
 os.chdir(rootDirNeg)
 
-commandline = 'wget -nd -r -A "neg-0[0-3]*.jpg" http://haar.thiagohersan.com/haartraining/negatives/'
+commandline = 'wget -nd -r -A "neg-0[0-2]*.jpg" http://haar.thiagohersan.com/haartraining/negatives/'
 args=shlex.split(commandline)
 
 if os.listdir(rootDirNeg)==[]:
@@ -82,13 +82,13 @@ with open(destDirNeg+'/'+file_name,'w') as f:
 f.close()
 
 
-commandline1='opencv_createsamples -info '+rootDir+ '/positive.lst -num 350 -w 25 -h 25 -vec '+rootDir+'/positives.vec'
+commandline1='opencv_createsamples -info '+rootDir+ '/positive.lst -num 129 -w 25 -h 25 -vec '+rootDir+'/positives.vec'
 print commandline1
 args1=shlex.split(commandline1)
 p=subprocess.call(args1)
 print 'Done creating vector file'
 
-commandline2='opencv_traincascade -data ' + dataDir + ' -vec ' + rootDir + '/positives.vec' +' -bg '+ destDirNeg +'/neg.txt'+' -numPos 133 -numNeg 142 -numStages 10 -w 25 -h 25'
+commandline2='opencv_traincascade -data ' + dataDir + ' -vec ' + rootDir + '/positives.vec' +' -bg '+ destDirNeg +'/neg.txt'+' -numPos 129 -numNeg 142 -numStages 10 -w 25 -h 25'
 args2=shlex.split(commandline2)
 print args2
 print 'Start Training'

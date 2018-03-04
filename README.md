@@ -44,6 +44,10 @@ Increasing the dataset would be the next step towards getting a more accurate mo
 State of the art for object detection is to use Neural networks - MobileNet, SSD networks. </br>
 This could be a possible next step towards achieving a better, more accurate model. </br>
 
+# Possible Issues</br>
+1) Make sure to provide the absolute path to your positive image directory. (eq. /home/users/find_phone/) </br>
+2) The Negative Images, resized negative images, positive.lst and positives.vec files get stored in the positive image directory just in case you need to view them. </br>
+
 
 
 
